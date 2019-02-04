@@ -10,9 +10,7 @@ import UIKit
 
 class GalleryCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    
     var cells = [SushiModel]()
-    
 
      init() {
         let layout = UICollectionViewFlowLayout()

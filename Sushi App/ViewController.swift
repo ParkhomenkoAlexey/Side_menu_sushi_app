@@ -24,7 +24,6 @@ class ViewController: UIViewController {
         galleryCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         galleryCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         galleryCollectionView.topAnchor.constraint(equalTo: deliveryLabel.bottomAnchor, constant: 10).isActive = true
-        
         galleryCollectionView.heightAnchor.constraint(equalToConstant: 350).isActive = true
         
         
