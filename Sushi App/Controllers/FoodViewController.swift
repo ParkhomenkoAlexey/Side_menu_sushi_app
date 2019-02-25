@@ -9,11 +9,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+protocol FoodViewControllerDelegate {
+    func toggleMenu()
+}
+
+class FoodViewController: UIViewController {
 
     @IBOutlet weak var deliveryLabel: UILabel!
     
     private var galleryCollectionView = GalleryCollectionView()
+    var delegate: FoodViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +35,10 @@ class ViewController: UIViewController {
         galleryCollectionView.set(cells: SushiModel.fetchSushi())
     }
 
+    @IBAction func menuButton(_ sender: UIButton) {
+        
+        delegate?.toggleMenu()
+    }
     
 
 }

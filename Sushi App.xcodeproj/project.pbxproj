@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		F0386B052204253C001EB04B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0386B042204253C001EB04B /* AppDelegate.swift */; };
-		F0386B072204253C001EB04B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0386B062204253C001EB04B /* ViewController.swift */; };
+		F0386B072204253C001EB04B /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0386B062204253C001EB04B /* FoodViewController.swift */; };
 		F0386B0C2204253E001EB04B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0386B0B2204253E001EB04B /* Assets.xcassets */; };
 		F0386B0F2204253E001EB04B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0386B0D2204253E001EB04B /* LaunchScreen.storyboard */; };
 		F0386B172204255A001EB04B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0386B162204255A001EB04B /* Main.storyboard */; };
 		F0386B1D22047D92001EB04B /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0386B1C22047D92001EB04B /* GalleryCollectionView.swift */; };
 		F0386B1F22048135001EB04B /* SushiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0386B1E22048135001EB04B /* SushiModel.swift */; };
 		F0386B212204955E001EB04B /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0386B202204955E001EB04B /* GalleryCollectionViewCell.swift */; };
+		F0F373102223E80C00AEB8DD /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F3730F2223E80C00AEB8DD /* ContainerViewController.swift */; };
+		F0F373122223E81500AEB8DD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F373112223E81500AEB8DD /* MenuViewController.swift */; };
+		F0F37315222406CB00AEB8DD /* MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F37314222406CB00AEB8DD /* MenuTableCell.swift */; };
+		F0F3731822240A1500AEB8DD /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F3731722240A1500AEB8DD /* MenuModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F0386B012204253C001EB04B /* Sushi App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sushi App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0386B042204253C001EB04B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0386B062204253C001EB04B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0386B062204253C001EB04B /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		F0386B0B2204253E001EB04B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0386B0E2204253E001EB04B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0386B102204253E001EB04B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -28,6 +32,10 @@
 		F0386B1C22047D92001EB04B /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
 		F0386B1E22048135001EB04B /* SushiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiModel.swift; sourceTree = "<group>"; };
 		F0386B202204955E001EB04B /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		F0F3730F2223E80C00AEB8DD /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		F0F373112223E81500AEB8DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F0F37314222406CB00AEB8DD /* MenuTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableCell.swift; sourceTree = "<group>"; };
+		F0F3731722240A1500AEB8DD /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +69,44 @@
 			isa = PBXGroup;
 			children = (
 				F0386B042204253C001EB04B /* AppDelegate.swift */,
-				F0386B062204253C001EB04B /* ViewController.swift */,
-				F0386B1C22047D92001EB04B /* GalleryCollectionView.swift */,
-				F0386B202204955E001EB04B /* GalleryCollectionViewCell.swift */,
+				F0F373132223E82300AEB8DD /* Controllers */,
+				F0F37316222406D500AEB8DD /* Views */,
 				F0386B162204255A001EB04B /* Main.storyboard */,
-				F0386B1E22048135001EB04B /* SushiModel.swift */,
+				F0F3731922240A1E00AEB8DD /* Models */,
 				F0386B0B2204253E001EB04B /* Assets.xcassets */,
 				F0386B0D2204253E001EB04B /* LaunchScreen.storyboard */,
 				F0386B102204253E001EB04B /* Info.plist */,
 			);
 			path = "Sushi App";
+			sourceTree = "<group>";
+		};
+		F0F373132223E82300AEB8DD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0F3730F2223E80C00AEB8DD /* ContainerViewController.swift */,
+				F0386B062204253C001EB04B /* FoodViewController.swift */,
+				F0F373112223E81500AEB8DD /* MenuViewController.swift */,
+				F0386B1C22047D92001EB04B /* GalleryCollectionView.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F0F37316222406D500AEB8DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0386B202204955E001EB04B /* GalleryCollectionViewCell.swift */,
+				F0F37314222406CB00AEB8DD /* MenuTableCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F0F3731922240A1E00AEB8DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F0F3731722240A1500AEB8DD /* MenuModel.swift */,
+				F0386B1E22048135001EB04B /* SushiModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +182,12 @@
 			files = (
 				F0386B1F22048135001EB04B /* SushiModel.swift in Sources */,
 				F0386B212204955E001EB04B /* GalleryCollectionViewCell.swift in Sources */,
+				F0F3731822240A1500AEB8DD /* MenuModel.swift in Sources */,
 				F0386B1D22047D92001EB04B /* GalleryCollectionView.swift in Sources */,
-				F0386B072204253C001EB04B /* ViewController.swift in Sources */,
+				F0F37315222406CB00AEB8DD /* MenuTableCell.swift in Sources */,
+				F0F373122223E81500AEB8DD /* MenuViewController.swift in Sources */,
+				F0386B072204253C001EB04B /* FoodViewController.swift in Sources */,
+				F0F373102223E80C00AEB8DD /* ContainerViewController.swift in Sources */,
 				F0386B052204253C001EB04B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
